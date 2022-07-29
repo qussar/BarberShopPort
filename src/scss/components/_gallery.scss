@@ -1,0 +1,34 @@
+.gallery__item {
+  position: relative;
+
+  padding-bottom: 70px;
+  img {
+    position: relative;
+    filter: invert(20%);
+    transition: 0.4s ease-in-out;
+    width: 980px;
+    height: 560px;
+  }
+  img:hover {
+    filter: none;
+    transform: scale(110%);
+  }
+}
+
+.gallery__item-barber {
+  position: absolute;
+  font-size: 40px;
+  text-align: center;
+  top: 40%;
+  right: 35%;
+  span {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1101px) {
+  .gallery__item-barber {
+    font-size: 15px;
+    right: 10%;
+  }
+}

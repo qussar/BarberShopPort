@@ -1,0 +1,21 @@
+@mixin tabs {
+  .tabs__nav-btn--active {
+    transform: scale(130%);
+    text-shadow: black 10px 10px 10px;
+  }
+
+  .tabs__panel {
+    display: block;
+    position: absolute;
+    transform: translateX(-500%);
+    transition: transform 0.3s ease-in-out;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .tabs__panel--active {
+    display: block;
+    transform: none;
+    transition: transform 0.3s ease-in-out;
+  }
+}
