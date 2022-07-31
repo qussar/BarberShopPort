@@ -1,7 +1,6 @@
 @mixin tabs {
   .tabs__nav-btn--active {
-    transform: scale(130%);
-    text-shadow: black 10px 10px 10px;
+    transform: scale(150%);
   }
 
   .tabs__panel {
