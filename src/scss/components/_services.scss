@@ -89,8 +89,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .services {
+    padding-bottom: 500px;
+    padding-top: 400px;
+  }
 }
 @media (max-width: 666px) {
+  .services {
+    padding-top: 300px;
+  }
   .tabs {
     padding-left: 10px;
   }

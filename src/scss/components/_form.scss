@@ -50,3 +50,12 @@
   font-weight: 800;
   color: var(--light-color);
 }
+
+@media (max-width: 790px) {
+  .form__label {
+    flex-direction: column;
+  }
+  .form__left {
+    width: 100%;
+  }
+}

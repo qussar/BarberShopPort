@@ -1,5 +1,6 @@
 .contacts {
   padding-top: 100px;
+  position: relative;
 }
 
 .contacts__top {
@@ -58,6 +59,14 @@
 
 .map {
   filter: invert(20%);
+}
+
+.whiteshadow {
+  position: absolute;
+  right: 0;
+  top: -500px;
+  user-select: none;
+  z-index: -999;
 }
 
 @media (max-width: 1100px) {

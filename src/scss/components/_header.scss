@@ -1,6 +1,7 @@
 .header {
   font-weight: 700;
   position: fixed;
+  z-index: 999;
   width: 100%;
   font-family: var(--font-family-header);
 }
@@ -112,7 +113,7 @@
   }
 }
 
-.header__btn {
+.btn {
   background-color: var(--header-color);
   border: 2px solid var(--green-color);
   color: var(--green-color);
@@ -132,7 +133,8 @@
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
 }
 
@@ -171,8 +173,10 @@
   .header__adaptive-content {
     position: fixed;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 15px;
     background-color: var(--header-color);
 
