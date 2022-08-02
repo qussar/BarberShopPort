@@ -23,6 +23,8 @@ console.log(mobileCheck())
 // Реализация бургер-меню
 import { burger } from './functions/burger';
 
+import { phone } from './functions/phone';
+
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
 
@@ -30,8 +32,8 @@ import { burger } from './functions/burger';
 // import { enableScroll } from './functions/enable-scroll';
 
 // Реализация модального окна
-// import GraphModal from 'graph-modal';
-// const modal = new GraphModal();
+import GraphModal from 'graph-modal';
+const modal = new GraphModal();
 
 // Реализация табов
 import GraphTabs from 'graph-tabs';
@@ -44,14 +46,14 @@ const tabs = new GraphTabs('tab');
 // import 'simplebar';
 
 // Подключение плагина для позиционирования тултипов
-import { createPopper, right } from '@popperjs/core';
+// import { createPopper, right } from '@popperjs/core';
 
-const el = document.querySelector('.tooltip__btn')
-const tooltip = document.querySelector('.tooltip__txt')
+// const el = document.querySelector('.tooltip__btn')
+// const tooltip = document.querySelector('.tooltip__txt')
 
-createPopper(el, tooltip, {
-  placement: 'right'
-});
+// createPopper(el, tooltip, {
+//   placement: 'right'
+// });
 
 // Подключение свайпера
 import Swiper, { Navigation, Pagination } from 'swiper';

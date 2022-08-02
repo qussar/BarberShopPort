@@ -1,0 +1,111 @@
+.phone-btn {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  right: 100px;
+  bottom: 100px;
+  z-index: 999;
+  animation: left 1s ease-in-out;
+  padding: 5px;
+
+  img {
+    animation: rotate 1.3s infinite;
+  }
+}
+.phone-wave {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--green-color);
+  border-radius: 50%;
+  right: 100px;
+  bottom: 100px;
+  z-index: 999;
+  animation: wave 1.5s infinite;
+  z-index: 997;
+}
+
+.phone {
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  right: 50px;
+  bottom: 250px;
+
+  transform: translate(-1000%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 998;
+}
+
+.phone--active {
+  display: block;
+  transform: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.z-index-up {
+  z-index: 999;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+}
+.z-index-down {
+  z-index: 998;
+  color: var(--light-color);
+  padding: 5px;
+  font-size: 18px;
+  p {
+    animation: 1s text infinite;
+  }
+}
+
+@keyframes left {
+  from {
+    transform: translate(-2000%);
+  }
+
+  to {
+    transform: translate(0), rotate(0deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes wave {
+  100% {
+    transform: scale(270%);
+    border-color: transparent;
+    opacity: 0;
+  }
+}
+@keyframes text {
+  to {
+    transform: scale(110%);
+  }
+  from {
+    transform: scale(90%);
+  }
+}
+
+@media (max-width: 1203px) {
+  .phone-btn {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+  .phone-wave {
+    display: none;
+  }
+}

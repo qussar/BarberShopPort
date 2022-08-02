@@ -6,12 +6,17 @@
 <body class="page__body">
   <div class="site-container">
     @include('partials/header.html')
+
     <main class="main">
+      @include('partials/reg-modal.html')
+      @include('partials/phone-modal.html')
       @include('partials/home.html')
       @include('partials/services.html')
       @include('partials/gallery.html')
       @include('partials/contacts.html')
       @include('partials/form.html')
+
+
     </main>
 
     @include('partials/footer.html')

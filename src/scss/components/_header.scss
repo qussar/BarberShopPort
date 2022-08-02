@@ -4,6 +4,7 @@
   z-index: 999;
   width: 100%;
   font-family: var(--font-family-header);
+  background-color: var(--header-color);
 }
 
 .header__menu {
@@ -138,7 +139,24 @@
   width: 100%;
 }
 
+.burger {
+  display: none;
+}
+.btn-adaptive {
+  display: none;
+}
 @media (max-width: 1203px) {
+  .burger {
+    display: inherit;
+  }
+
+  .btn-adaptive {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    font-size: 25px;
+  }
   .header__menu {
     gap: 20px;
   }
@@ -168,6 +186,7 @@
     transform: translateX(-100%);
     display: block;
     transition: transform 0.5s ease-in-out;
+    z-index: 998;
   }
 
   .header__adaptive-content {
