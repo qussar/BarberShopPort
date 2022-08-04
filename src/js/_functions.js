@@ -25,6 +25,8 @@ import { burger } from './functions/burger';
 
 import { phone } from './functions/phone';
 
+import { fade } from './functions/fade';
+
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
 
